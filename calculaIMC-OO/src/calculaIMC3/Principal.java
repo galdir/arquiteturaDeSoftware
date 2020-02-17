@@ -10,7 +10,7 @@ public class Principal {
 		double peso = 0;
 		
 		String alturaString=JOptionPane.showInputDialog("Entre com a altura");
-		String pesoString=JOptionPane.showInputDialog("Entre com o Peso");
+		String pesoString=JOptionPane.showInputDialog("Entre com o peso");
 		
 		JOptionPane.showMessageDialog(null, "A altura é "+alturaString+"e o peso é "+pesoString);
 		
