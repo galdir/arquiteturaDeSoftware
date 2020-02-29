@@ -2,7 +2,6 @@ import java.awt.Button;
 import java.awt.Frame;
 import java.awt.Label;
 import java.awt.Panel;
-import java.awt.TextField;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -10,12 +9,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
 class OutraView implements PropertyChangeListener {
 
 	//attributes as must be visible within class
-	private TextField myTextField;
 	private JLabel rotulo;
 	private Button button; 
 
