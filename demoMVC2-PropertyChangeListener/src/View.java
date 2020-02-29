@@ -25,22 +25,20 @@ class View implements PropertyChangeListener {
 	private TextField myTextField;
 	private Button button; 
 
-	//private Model model;		//Joe: Model is hardwired in, 
-					//needed only if view initialises model (which we aren't doing)
-	
+
 	View() {
 		System.out.println("View()");	
 		
 		//frame in constructor and not an attribute as doesn't need to be visible to whole class
-		Frame frame 		= new Frame("simple MVC");
-		frame.add("North", new Label("counter"));
+		Frame frame 		= new Frame("MVC Simples");
+		frame.add("North", new Label("contador"));
 
 		myTextField 		= new TextField();
 		frame.add("Center", myTextField);
 
 		//panel in constructor and not an attribute as doesn't need to be visible to whole class
 		Panel panel 		= new Panel();
-		button	 		= new Button("PressMe");
+		button	 		= new Button("Me aperte!");
 		panel.add(button);
 		frame.add("South", panel);		
 
@@ -62,11 +60,6 @@ class View implements PropertyChangeListener {
     		myTextField.setText("" + v);
 	} //setValue()
     	
-	//uncomment to allow controller to use view to initialise model	
-	//public void addModel(Model m){
-	//	System.out.println("View      : adding model");
-	//	this.model = m;
-	//} //addModel()
 	
 	public static class CloseListener extends WindowAdapter {
 		public void windowClosing(WindowEvent e) {
